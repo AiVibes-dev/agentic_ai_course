@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5: Agent Development Frameworks and Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Agentic AI Systems Architect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../modules.html">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../exercises.html">Exercises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../modules.html" class="text-white">Modules</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Module 5: Development Frameworks</li>
+                </ol>
+            </nav>
+            <h1 class="mt-3">Module 5: Agent Development Frameworks and Tools</h1>
+            <p class="lead">Exploring frameworks, libraries, and tools for building agentic AI systems</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <h4>Module Contents</h4>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#introduction">5.1 Introduction to Agent Frameworks</a>
+                            <a class="nav-link" href="#langchain">5.2 LangChain Framework</a>
+                            <a class="nav-link" href="#autogen">5.3 AutoGen Framework</a>
+                            <a class="nav-link" href="#llamaindex">5.4 LlamaIndex</a>
+                            <a class="nav-link" href="#prompt-engineering">5.5 Prompt Engineering Tools</a>
+                            <a class="nav-link" href="#custom-frameworks">5.6 Building Custom Frameworks</a>
+                            <a class="nav-link" href="#assessment">5.7 Module Assessment</a>
+                        </nav>
+                        
+                        <h4 class="mt-4">Module Resources</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../resources.html#module5" class="btn btn-outline-primary btn-sm">Learning Resources</a>
+                            <a href="../exercises.html#module5" class="btn btn-outline-primary btn-sm">Practical Exercises</a>
+                        </div>
+                        
+                        <h4 class="mt-4">Module Navigation</h4>
+                        <div class="d-flex justify-content-between">
+                            <a href="module4.html" class="btn btn-primary btn-sm">← Previous</a>
+                            <a href="module6.html" class="btn btn-primary btn-sm">Next →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="module-content">
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading">Learning Objectives</h4>
+                            <p>By the end of this module, you will be able to:</p>
+                            <ul class="mb-0">
+                                <li>Evaluate and select appropriate frameworks for agentic AI development</li>
+                                <li>Implement agents using LangChain, AutoGen, and LlamaIndex</li>
+                                <li>Apply effective prompt engineering techniques</li>
+                                <li>Design custom agent frameworks for specialized applications</li>
+                                <li>Integrate multiple frameworks in complex agent architectures</li>
+                                <li>Optimize framework usage for performance and reliability</li>
+                            </ul>
+                        </div>
+                        
+                        <section id="introduction">
+                            <h2>5.1 Introduction to Agent Frameworks</h2>
+                            
+                            <h3>The Role of Frameworks in Agentic AI Development</h3>
+                            <p>Agent development frameworks provide structured approaches, reusable components, and standardized patterns for building agentic AI systems. These frameworks abstract away common implementation details, allowing developers to focus on the unique aspects of their agents rather than reinventing foundational components. As the field of agentic AI has matured, specialized frameworks have emerged to address different architectural patterns, use cases, and integration needs.</p>
+                            
+                            <p>Effective frameworks serve several critical functions in the development process:</p>
+                            
+                            <ul>
+                                <li><strong>Abstraction:</strong> Hiding implementation complexity behind well-designed interfaces.</li>
+                                <li><strong>Standardization:</strong> Providing consistent patterns and approaches across different agent implementations.</li>
+                                <li><strong>Reusability:</strong> Offering pre-built components that can be composed to create diverse agent behaviors.</li>
+                                <li><strong>Integration:</strong> Facilitating connections between agents and external systems, services, or data sources.</li>
+                                <li><strong>Optimization:</strong> Implementing efficient algorithms and techniques that would be complex to develop from scratch.</li>
+                                <li><strong>Extensibility:</strong> Supporting customization and extension to address specialized requirements.</li>
+                            </ul>
+                            
+                            <h3>Framework Landscape</h3>
+                            <p>The landscape of agent development frameworks has evolved rapidly, with several major categories emerging:</p>
+                            
+                            <h4>1. LLM Orchestration Frameworks</h4>
+                            <p>Frameworks focused on orchestrating interactions with large language models and integrating them with other components:</p>
+                            
+                            <ul>
+                                <li><strong>LangChain:</strong> A comprehensive framework for building applications with LLMs through composable components.</li>
+                                <li><strong>LlamaIndex:</strong> A data framework for connecting custom data sources to LLMs.</li>
+                                <li><strong>Semantic Kernel:</strong> Microsoft's framework for integrating LLMs with programming languages.</li>
+                                <li><strong>Haystack:</strong> A framework for building search systems with LLMs and other components.</li>
+                            </ul>
+                            
+                            <h4>2. Multi-Agent Frameworks</h4>
+                            <p>Frameworks designed specifically for creating systems with multiple interacting agents:</p>
+                            
+                            <ul>
+                                <li><strong>AutoGen:</strong> Microsoft's framework for building applications with multiple conversational agents.</li>
+                                <li><strong>CrewAI:</strong> A framework for orchestrating role-playing autonomous agents.</li>
+                                <li><strong>MADRONA:</strong> A framework for multi-agent reinforcement learning.</li>
+                                <li><strong>RASA:</strong> An open-source framework for building conversational AI with multiple components.</li>
+                            </ul>
+                            
+                            <h4>3. Tool Integration Frameworks</h4>
+                            <p>Frameworks that focus on connecting agents with external tools and capabilities:</p>
+                            
+                            <ul>
+                                <li><strong>Toolformer:</strong> A framework for equipping language models with tool use capabilities.</li>
+                                <li><strong>LangChain Tools:</strong> LangChain's ecosystem for tool integration and function calling.</li>
+                                <li><strong>Agent Protocol:</strong> A standardized protocol for agent-tool interactions.</li>
+                                <li><strong>Fixie:</strong> A platform for building agents that can use various tools and APIs.</li>
+                            </ul>
+                            
+                            <h4>4. Cognitive Architecture Frameworks</h4>
+                            <p>Frameworks inspired by cognitive science that implement comprehensive agent architectures:</p>
+                            
+                            <ul>
+                                <li><strong>ACT-R:</strong> A cognitive architecture based on production systems.</li>
+                                <li><strong>SOAR:</strong> A general cognitive architecture for developing systems with human-like intelligence.</li>
+                                <li><strong>CLARION:</strong> A framework implementing a dual-process theory of cognition.</li>
+                                <li><strong>SIGMA:</strong> A graphical cognitive architecture supporting diverse cognitive capabilities.</li>
+                            </ul>
+                            
+                            <h4>5. Domain-Specific Frameworks</h4>
+                            <p>Frameworks tailored to specific application domains or agent types:</p>
+                            
+                            <ul>
+                                <li><strong>Robotics Frameworks:</strong> ROS (Robot Operating System), PyRobot, etc.</li>
+                                <li><strong>Game AI Frameworks:</strong> Unity ML-Agents, OpenAI Gym, etc.</li>
+                                <li><strong>Conversational AI Frameworks:</strong> Botpress, Dialogflow, etc.</li>
+                                <li><strong>Business Process Automation:</strong> Camunda, Celonis, etc.</li>
+                            </ul>
+                            
+                            <h3>Framework Selection Criteria</h3>
+                            <p>Selecting the appropriate framework for an agentic AI project involves considering several key factors:</p>
+                            
+                            <h4>1. Architectural Alignment</h4>
+                            <p>The framework should align with the architectural approach of the agent system:</p>
+                            
+                            <ul>
+                                <li><strong>Agent Model:</strong> Does the framework support the desired agent model (reactive, deliberative, hybrid, etc.)?</li>
+                                <li><strong>Component Structure:</strong> Does the framework's component model match the system's requirements?</li>
+                                <li><strong>Interaction Patterns:</strong> Does the framework support the necessary interaction patterns between components?</li>
+                                <li><strong>Scalability Model:</strong> Does the framework's approach to scaling match the system's needs?</li>
+                            </ul>
+                            
+                            <h4>2. Functional Requirements</h4>
+                            <p>The framework should provide the capabilities needed for the agent's functions:</p>
+                            
+                            <ul>
+                                <li><strong>LLM Integration:</strong> Support for the specific LLMs and interaction patterns required.</li>
+                                <li><strong>Tool Use:</strong> Capabilities for integrating with external tools and APIs.</li>
+                                <li><strong>Memory Systems:</strong> Support for the types of memory needed (working, episodic, semantic, etc.).</li>
+                                <li><strong>Planning Capabilities:</strong> Support for the planning approaches required by the agent.</li>
+                                <li><strong>Learning Mechanisms:</strong> Capabilities for adaptation and learning if needed.</li>
+                            </ul>
+                            
+                            <h4>3. Technical Considerations</h4>
+                            <p>The framework should meet technical requirements and constraints:</p>
+                            
+                            <ul>
+                                <li><strong>Performance:</strong> Efficiency in terms of speed, memory usage, and resource utilization.</li>
+                                <li><strong>Scalability:</strong> Ability to handle the expected load and growth.</li>
+                                <li><strong>Reliability:</strong> Stability, error handling, and fault tolerance.</li>
+                                <li><strong>Security:</strong> Protection against vulnerabilities and support for security best practices.</li>
+                                <li><strong>Deployment Options:</strong> Compatibility with the target deployment environment.</li>
+                            </ul>
+                            
+                            <h4>4. Ecosystem and Support</h4>
+                            <p>The framework's ecosystem can significantly impact development efficiency:</p>
+                            
+                            <ul>
+                                <li><strong>Documentation:</strong> Quality, completeness, and accessibility of documentation.</li>
+                                <li><strong>Community:</strong> Size, activity, and helpfulness of the user community.</li>
+                                <li><strong>Extensions:</strong> Availability of plugins, extensions, or integrations.</li>
+                                <li><strong>Maintenance:</strong> Active development, bug fixes, and updates.</li>
+                                <li><strong>Commercial Support:</strong> Availability of professional support if needed.</li>
+                            </ul>
+                            
+                            <h4>5. Development Experience</h4>
+                            <p>The framework should provide a positive development experience:</p>
+                            
+              
+(Content truncated due to size limit. Use line ranges to read in chunks)

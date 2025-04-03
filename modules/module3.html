@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Data Structures and Knowledge Representation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Agentic AI Systems Architect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../modules.html">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../exercises.html">Exercises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../modules.html" class="text-white">Modules</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Module 3: Data Structures</li>
+                </ol>
+            </nav>
+            <h1 class="mt-3">Module 3: Data Structures and Knowledge Representation</h1>
+            <p class="lead">Exploring the data structures and knowledge representation formats essential for agentic AI systems</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <h4>Module Contents</h4>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#introduction">3.1 Introduction to Knowledge Representation</a>
+                            <a class="nav-link" href="#knowledge-graphs">3.2 Knowledge Graphs</a>
+                            <a class="nav-link" href="#vector-embeddings">3.3 Vector Embeddings</a>
+                            <a class="nav-link" href="#mdps">3.4 Markov Decision Processes</a>
+                            <a class="nav-link" href="#temporal">3.5 Temporal Knowledge Representation</a>
+                            <a class="nav-link" href="#multimodal">3.6 Multimodal Knowledge Structures</a>
+                            <a class="nav-link" href="#assessment">3.7 Module Assessment</a>
+                        </nav>
+                        
+                        <h4 class="mt-4">Module Resources</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../resources.html#module3" class="btn btn-outline-primary btn-sm">Learning Resources</a>
+                            <a href="../exercises.html#module3" class="btn btn-outline-primary btn-sm">Practical Exercises</a>
+                        </div>
+                        
+                        <h4 class="mt-4">Module Navigation</h4>
+                        <div class="d-flex justify-content-between">
+                            <a href="module2.html" class="btn btn-primary btn-sm">← Previous</a>
+                            <a href="module4.html" class="btn btn-primary btn-sm">Next →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="module-content">
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading">Learning Objectives</h4>
+                            <p>By the end of this module, you will be able to:</p>
+                            <ul class="mb-0">
+                                <li>Implement knowledge graphs for agent knowledge representation</li>
+                                <li>Apply vector embeddings for semantic understanding</li>
+                                <li>Model decision processes using Markov Decision Processes</li>
+                                <li>Design temporal knowledge structures</li>
+                                <li>Create efficient knowledge sharing mechanisms</li>
+                            </ul>
+                        </div>
+                        
+                        <section id="introduction">
+                            <h2>3.1 Introduction to Knowledge Representation</h2>
+                            
+                            <h3>The Importance of Knowledge Representation in Agentic Systems</h3>
+                            <p>Knowledge representation forms the foundation of agentic AI systems, determining how information is structured, stored, and accessed. Effective knowledge representation enables agents to reason about the world, make informed decisions, and adapt to new situations. Without robust knowledge structures, even the most sophisticated reasoning algorithms would fail due to inadequate or poorly organized information.</p>
+                            
+                            <p>Key functions of knowledge representation in agentic systems include:</p>
+                            
+                            <ul>
+                                <li><strong>Information Organization:</strong> Structuring data in ways that facilitate efficient storage and retrieval.</li>
+                                <li><strong>Semantic Understanding:</strong> Capturing the meaning and relationships between concepts and entities.</li>
+                                <li><strong>Reasoning Support:</strong> Enabling logical inference, pattern recognition, and decision-making.</li>
+                                <li><strong>Knowledge Transfer:</strong> Facilitating the application of knowledge across different contexts and domains.</li>
+                                <li><strong>Memory Management:</strong> Supporting different types of memory (working, episodic, semantic) with appropriate structures.</li>
+                                <li><strong>Learning Foundation:</strong> Providing the structural basis for incorporating new information and experiences.</li>
+                            </ul>
+                            
+                            <h3>Requirements for Effective Knowledge Representation</h3>
+                            <p>Effective knowledge representation for agentic AI systems must satisfy several key requirements:</p>
+                            
+                            <ol>
+                                <li><strong>Expressiveness:</strong> The ability to represent diverse types of information, including facts, relationships, procedures, and uncertainties.</li>
+                                <li><strong>Efficiency:</strong> Support for fast storage, retrieval, and manipulation of knowledge, even at scale.</li>
+                                <li><strong>Flexibility:</strong> The capacity to evolve and incorporate new information without requiring complete restructuring.</li>
+                                <li><strong>Consistency:</strong> Mechanisms to maintain coherence and resolve contradictions in the knowledge base.</li>
+                                <li><strong>Interpretability:</strong> Structures that can be understood and inspected by humans when necessary.</li>
+                                <li><strong>Interoperability:</strong> The ability to exchange information with other systems and knowledge sources.</li>
+                            </ol>
+                            
+                            <h3>Evolution of Knowledge Representation Approaches</h3>
+                            <p>Knowledge representation approaches have evolved significantly over the history of AI:</p>
+                            
+                            <h4>1. Symbolic Approaches</h4>
+                            <p>Early AI systems relied heavily on symbolic knowledge representation:</p>
+                            
+                            <ul>
+                                <li><strong>Logic-Based Representations:</strong> Using formal logic (propositional, first-order, etc.) to represent facts and rules.</li>
+                                <li><strong>Semantic Networks:</strong> Representing knowledge as networks of concepts connected by semantic relationships.</li>
+                                <li><strong>Frames and Scripts:</strong> Structured representations of stereotypical situations and expected sequences of events.</li>
+                                <li><strong>Production Rules:</strong> Condition-action pairs that specify what to do in different situations.</li>
+                            </ul>
+                            
+                            <p>Symbolic approaches excel at explicit reasoning and human interpretability but often struggle with uncertainty, learning from data, and scaling to large knowledge bases.</p>
+                            
+                            <h4>2. Statistical and Probabilistic Approaches</h4>
+                            <p>As AI evolved, statistical and probabilistic methods gained prominence:</p>
+                            
+                            <ul>
+                                <li><strong>Bayesian Networks:</strong> Graphical models representing probabilistic relationships between variables.</li>
+                                <li><strong>Markov Models:</strong> Representing sequential processes with state transition probabilities.</li>
+                                <li><strong>Probabilistic Logic:</strong> Extending logical formalisms with uncertainty measures.</li>
+                                <li><strong>Statistical Relational Learning:</strong> Combining relational structures with statistical methods.</li>
+                            </ul>
+                            
+                            <p>These approaches better handle uncertainty and learning from data but may sacrifice some interpretability and struggle with complex relational knowledge.</p>
+                            
+                            <h4>3. Distributed Representations</h4>
+                            <p>Modern AI systems increasingly use distributed representations:</p>
+                            
+                            <ul>
+                                <li><strong>Neural Embeddings:</strong> Representing concepts as dense vectors in high-dimensional spaces.</li>
+                                <li><strong>Knowledge Graph Embeddings:</strong> Capturing graph structures in continuous vector spaces.</li>
+                                <li><strong>Latent Representations:</strong> Learning compressed representations that capture underlying patterns.</li>
+                                <li><strong>Multimodal Embeddings:</strong> Unified representations across different data types (text, images, etc.).</li>
+                            </ul>
+                            
+                            <p>Distributed representations excel at capturing semantic similarity, generalization, and learning from data but may lack explicit interpretability and struggle with precise logical reasoning.</p>
+                            
+                            <h4>4. Hybrid Approaches</h4>
+                            <p>Contemporary agentic AI systems often employ hybrid knowledge representations:</p>
+                            
+                            <ul>
+                                <li><strong>Neuro-Symbolic Systems:</strong> Combining neural networks with symbolic knowledge structures.</li>
+                                <li><strong>Structured Embeddings:</strong> Incorporating explicit structure into distributed representations.</li>
+                                <li><strong>Multi-Representation Systems:</strong> Using different representation formats for different types of knowledge.</li>
+                                <li><strong>Layered Knowledge Architectures:</strong> Organizing knowledge at different levels of abstraction with appropriate representations for each.</li>
+                            </ul>
+                            
+                            <p>Hybrid approaches aim to leverage the strengths of different representation paradigms while mitigating their individual weaknesses.</p>
+                            
+                            <h3>Knowledge Representation in LLM-Based Agents</h3>
+                            <p>LLM-based agentic systems present unique considerations for knowledge representation:</p>
+                            
+                            <ol>
+                                <li><strong>Implicit Knowledge:</strong> LLMs contain vast amounts of knowledge implicitly encoded in their parameters, which can be accessed through appropriate prompting.</li>
+                                <li><strong>Context Window:</strong> The limited context window of LLMs requires careful management of what information is included and how it is structured.</li>
+                                <li><strong>External Knowledge:</strong> Many LLM-based agents augment the model's implicit knowledge with external knowledge sources that require appropriate representation.</li>
+                                <li><strong>Retrieval-Augmented Generation:</strong> Techniques that combine retrieval from external knowledge sources with LLM generation capabilities.</li>
+                                <li><strong>In-Context Learning:</strong> The ability of LLMs to adapt to new information presented within the context window, creating temporary knowledge structures.</li>
+                            </ol>
+                            
+                            <p>In the following sections, we will explore several key knowledge representation approaches that are particularly relevant for modern agentic AI systems, including knowledge graphs, vector embeddings, Markov Decision Processes, temporal knowledge structures, and multimodal representations.</p>
+                        </section>
+                        
+                        <section id="knowledge-graphs">
+                            <h2>3.2 Knowledge Graphs</h2>
+                            
+                            <h3>Fundamentals of Knowledge Graphs</h3>
+                            <p>Knowledge graphs are structured representations of knowledge that organize information as a network of entities and their relationships. They provide a flexible and powerful framework for representing complex, interconnected knowledge in a form that supports both human understanding and machine reasoning.</p>
+                            
+                            <h4>Core Components</h4>
+                            <p>Knowledge graphs consist of several fundamental components:</p>
+                            
+                            <ul>
+                                <li><strong>Entities:</strong> Distinct objects, concepts, or things in the domain (e.g., people, organizations, products, events).</li>
+        
+(Content truncated due to size limit. Use line ranges to read in chunks)

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Foundations of Agentic AI Systems</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Agentic AI Systems Architect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../modules.html">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../exercises.html">Exercises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../modules.html" class="text-white">Modules</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Module 1: Foundations</li>
+                </ol>
+            </nav>
+            <h1 class="mt-3">Module 1: Foundations of Agentic AI Systems</h1>
+            <p class="lead">Understanding the core concepts, capabilities, and applications of agentic AI</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <h4>Module Contents</h4>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#introduction">1.1 Introduction to Agentic AI</a>
+                            <a class="nav-link" href="#evolution">1.2 Historical Evolution</a>
+                            <a class="nav-link" href="#capabilities">1.3 Core Capabilities</a>
+                            <a class="nav-link" href="#architecture">1.4 Architectural Overview</a>
+                            <a class="nav-link" href="#applications">1.5 Industry Applications</a>
+                            <a class="nav-link" href="#ethics">1.6 Ethical Considerations</a>
+                            <a class="nav-link" href="#assessment">1.7 Module Assessment</a>
+                        </nav>
+                        
+                        <h4 class="mt-4">Module Resources</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../resources.html#module1" class="btn btn-outline-primary btn-sm">Learning Resources</a>
+                            <a href="../exercises.html#module1" class="btn btn-outline-primary btn-sm">Practical Exercises</a>
+                        </div>
+                        
+                        <h4 class="mt-4">Module Navigation</h4>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Previous</span>
+                            <a href="module2.html" class="btn btn-primary btn-sm">Next Module →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="module-content">
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading">Learning Objectives</h4>
+                            <p>By the end of this module, you will be able to:</p>
+                            <ul class="mb-0">
+                                <li>Define agentic AI systems and their key characteristics</li>
+                                <li>Explain the historical development of AI agents</li>
+                                <li>Identify the core capabilities required for effective agents</li>
+                                <li>Recognize ethical implications of autonomous systems</li>
+                                <li>Analyze real-world applications of agentic AI</li>
+                            </ul>
+                        </div>
+                        
+                        <section id="introduction">
+                            <h2>1.1 Introduction to Agentic AI</h2>
+                            
+                            <h3>Definition and Characteristics</h3>
+                            <p>Agentic AI systems are artificial intelligence systems that can act autonomously on behalf of users to achieve specified goals. Unlike traditional AI systems that respond reactively to user inputs, agentic systems proactively take actions, make decisions, and interact with their environment to accomplish tasks.</p>
+                            
+                            <p>Key characteristics that define agentic AI systems include:</p>
+                            
+                            <ul>
+                                <li><strong>Autonomy:</strong> The ability to operate independently without continuous human guidance, making decisions and taking actions based on their understanding of goals and environment.</li>
+                                <li><strong>Goal-directedness:</strong> Pursuit of specific objectives or outcomes, often provided by human users but interpreted and executed by the agent.</li>
+                                <li><strong>Perception:</strong> The capability to sense and interpret their environment, whether through text, images, structured data, or other inputs.</li>
+                                <li><strong>Reasoning:</strong> The ability to process information, draw inferences, and make decisions based on available knowledge and goals.</li>
+                                <li><strong>Action:</strong> The capacity to execute operations that affect their environment, such as generating text, calling APIs, or controlling physical systems.</li>
+                                <li><strong>Learning:</strong> The ability to improve performance over time through experience, feedback, or explicit training.</li>
+                                <li><strong>Adaptability:</strong> The capability to adjust behavior in response to changing conditions or unexpected situations.</li>
+                            </ul>
+                            
+                            <h3>The Spectrum of Agency</h3>
+                            <p>Agency in AI systems exists on a spectrum rather than as a binary property. At the lower end of the spectrum are simple automated systems with limited autonomy and decision-making capability. At the higher end are sophisticated agents that can understand complex goals, reason about the best approaches to achieve them, and adapt their strategies based on changing circumstances.</p>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Level of Agency</th>
+                                            <th>Characteristics</th>
+                                            <th>Examples</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Basic Automation</td>
+                                            <td>Predefined rules, limited flexibility, no learning</td>
+                                            <td>Rule-based chatbots, simple scripts</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Reactive Agency</td>
+                                            <td>Responds to environmental stimuli, limited memory</td>
+                                            <td>Traditional recommendation systems, basic game AI</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Deliberative Agency</td>
+                                            <td>Goal-oriented planning, model of environment</td>
+                                            <td>Virtual assistants, planning systems</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adaptive Agency</td>
+                                            <td>Learning from experience, adjusting strategies</td>
+                                            <td>Advanced LLM agents, reinforcement learning systems</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Autonomous Agency</td>
+                                            <td>Self-directed goal setting, complex reasoning</td>
+                                            <td>Research-stage autonomous agents, future systems</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <h3>The Emergence of Modern Agentic AI</h3>
+                            <p>The recent surge in agentic AI systems has been driven by several converging technological developments:</p>
+                            
+                            <ol>
+                                <li><strong>Large Language Models (LLMs):</strong> The development of powerful foundation models like GPT-4, Claude, and Llama has provided the cognitive capabilities necessary for sophisticated agency.</li>
+                                <li><strong>Tool-using capabilities:</strong> The ability for AI systems to use external tools and APIs has expanded their action space beyond text generation.</li>
+                                <li><strong>Reasoning frameworks:</strong> Techniques like chain-of-thought prompting and ReAct have improved the reasoning capabilities of language models.</li>
+                                <li><strong>Memory systems:</strong> Advances in contextual and long-term memory for AI systems have enabled more coherent and persistent agency.</li>
+                                <li><strong>Development frameworks:</strong> The emergence of frameworks like LangChain, AutoGen, and CrewAI has made it easier to build and deploy agentic systems.</li>
+                            </ol>
+                            
+                            <p>These developments have transformed AI systems from passive tools that respond to explicit instructions into active agents that can understand goals, formulate plans, and take actions to achieve objectives with increasing levels of autonomy.</p>
+                        </section>
+                        
+                        <section id="evolution">
+                            <h2>1.2 Historical Evolution</h2>
+                            
+                            <h3>Early Concepts of AI Agency</h3>
+                            <p>The concept of artificial agents has deep roots in both science fiction and academic AI research. The idea of machines that could act autonomously on behalf of humans has been explored since the earliest days of computing:</p>
+                            
+                            <ul>
+                                <li><strong>1950s:</strong> Alan Turing's seminal paper "Computing Machinery and Intelligence" introduced the Turing Test, implicitly suggesting the possibility of AI systems that could act in human-like ways.</li>
+                                <li><strong>1960s:</strong> Early AI research at institutions like MIT, Stanford, and Carnegie Mellon explored problem-solving systems that could plan sequences of actions to achieve goals.</li>
+                                <li><strong>1970s:</strong> The development of expert systems represented an early form of specialized agency, where AI systems could make decisions in narrow domains based on encoded knowledge.</li>
+                            </ul>
+                            
+                            <h3>Agent-Based AI Research</h3>
+                            <p>The formal study of AI agents as a distinct paradigm gained momentum in the 1980s and 1990s:</p>
+                            
+                            <ul>
+                                <li><strong>1980s:</strong> The development of the subsumption architecture by Rodney Brooks at MIT introduced a new approach to robotics based on reactive agents.</li>
+                                <li><strong>1987:</strong> The BDI (Belief-Desire-Intention) framework was introduced by Michael Bratman, providing a philosophical foundation for modeling rational agents.</li>
+                                <li><strong>1995:</strong> The publication of "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig popularized the agent-based view of AI, defining an agent as "anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators."</li>
+                                <li><strong>1990s-2000s:</strong> Multi-agent systems research explored how collections of agents could work together, communicate, and coordinate to solve problems.</li>
+                            </ul>
+                            
+                            <h3>From Narrow to General Agency</h3>
+                            <p>The evolution of agentic AI has followed a trajectory from highly specialized, narrow agents to increasingly general-purpose systems:</p>
+                            
+                            <ol>
+                                <li><strong>Specialized Agents (1980s-2000s):</strong> Early agents were designed for specific tasks like playing chess (Deep Blue), scheduling meetings, or controlling specific robotic functions.</li>
+                                <li><strong>Virtual Assistants (2010s):</strong> Systems like Siri, Alexa, and Google Assistant represented a step toward more general-purpose agency, capable of handling a variety of user requests through predefined skills.</li>
+                                <li><strong>LLM-Based Agents (2020s):</strong> The integration of large language models with tool-using capabilities has enabled a new generation of agents with broader cognitive abilities and action spaces.</li>
+                            </ol>
+                            
+                            <h3>Key Milestones in Modern Agentic AI</h3>
+                            <p>Several recent developments have accelerated the advancement of agentic AI systems:</p>
+                            
+                            <ul>
+                                <
+(Content truncated due to size limit. Use line ranges to read in chunks)

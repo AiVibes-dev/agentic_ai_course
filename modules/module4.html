@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Planning and Decision-Making Algorithms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Agentic AI Systems Architect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../modules.html">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../exercises.html">Exercises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../modules.html" class="text-white">Modules</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Module 4: Planning Algorithms</li>
+                </ol>
+            </nav>
+            <h1 class="mt-3">Module 4: Planning and Decision-Making Algorithms</h1>
+            <p class="lead">Exploring algorithms that enable agentic AI systems to plan actions and make decisions</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <h4>Module Contents</h4>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#introduction">4.1 Introduction to Planning</a>
+                            <a class="nav-link" href="#symbolic-planning">4.2 Symbolic Planning</a>
+                            <a class="nav-link" href="#reinforcement-learning">4.3 Reinforcement Learning</a>
+                            <a class="nav-link" href="#search-algorithms">4.4 Search Algorithms</a>
+                            <a class="nav-link" href="#uncertainty">4.5 Planning Under Uncertainty</a>
+                            <a class="nav-link" href="#llm-planning">4.6 LLM-Based Planning</a>
+                            <a class="nav-link" href="#assessment">4.7 Module Assessment</a>
+                        </nav>
+                        
+                        <h4 class="mt-4">Module Resources</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../resources.html#module4" class="btn btn-outline-primary btn-sm">Learning Resources</a>
+                            <a href="../exercises.html#module4" class="btn btn-outline-primary btn-sm">Practical Exercises</a>
+                        </div>
+                        
+                        <h4 class="mt-4">Module Navigation</h4>
+                        <div class="d-flex justify-content-between">
+                            <a href="module3.html" class="btn btn-primary btn-sm">← Previous</a>
+                            <a href="module5.html" class="btn btn-primary btn-sm">Next →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="module-content">
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading">Learning Objectives</h4>
+                            <p>By the end of this module, you will be able to:</p>
+                            <ul class="mb-0">
+                                <li>Compare different planning paradigms for agentic AI systems</li>
+                                <li>Implement symbolic planning algorithms for deterministic environments</li>
+                                <li>Apply reinforcement learning techniques for sequential decision-making</li>
+                                <li>Design search algorithms for exploring solution spaces</li>
+                                <li>Develop planning approaches that handle uncertainty</li>
+                                <li>Integrate LLM capabilities into planning processes</li>
+                            </ul>
+                        </div>
+                        
+                        <section id="introduction">
+                            <h2>4.1 Introduction to Planning</h2>
+                            
+                            <h3>The Role of Planning in Agentic Systems</h3>
+                            <p>Planning is a fundamental cognitive capability that enables agentic AI systems to determine sequences of actions that will achieve desired goals. Rather than simply reacting to immediate stimuli, planning allows agents to anticipate future states, evaluate potential courses of action, and select strategies that optimize for long-term objectives. This forward-looking capability is essential for complex problem-solving, goal-directed behavior, and efficient resource utilization.</p>
+                            
+                            <p>In agentic AI systems, planning serves several critical functions:</p>
+                            
+                            <ul>
+                                <li><strong>Goal Achievement:</strong> Determining sequences of actions that transform the current state into a goal state.</li>
+                                <li><strong>Resource Optimization:</strong> Allocating limited resources (time, computational capacity, external tools) efficiently to maximize utility.</li>
+                                <li><strong>Risk Management:</strong> Identifying potential obstacles or failures and developing contingency strategies.</li>
+                                <li><strong>Coordination:</strong> Synchronizing actions across time or between multiple agents to achieve complex objectives.</li>
+                                <li><strong>Adaptation:</strong> Adjusting strategies in response to changing circumstances or new information.</li>
+                                <li><strong>Explanation:</strong> Providing a basis for explaining and justifying the agent's behavior to users or other systems.</li>
+                            </ul>
+                            
+                            <h3>Planning Paradigms</h3>
+                            <p>Several distinct paradigms have emerged for implementing planning capabilities in AI systems, each with its own strengths, limitations, and appropriate use cases:</p>
+                            
+                            <h4>1. Symbolic Planning</h4>
+                            <p>Symbolic planning approaches represent the world, actions, and goals using explicit symbolic representations and reason about them using logical or mathematical formalisms:</p>
+                            
+                            <ul>
+                                <li><strong>Classical Planning:</strong> Planning in deterministic, fully observable environments with discrete actions and states.</li>
+                                <li><strong>Hierarchical Task Network (HTN) Planning:</strong> Decomposing complex tasks into hierarchies of simpler subtasks.</li>
+                                <li><strong>Temporal Planning:</strong> Planning with actions that have durations and can overlap in time.</li>
+                                <li><strong>Constraint-Based Planning:</strong> Representing planning problems as constraint satisfaction problems.</li>
+                            </ul>
+                            
+                            <p><strong>Key Characteristics:</strong> Explicit representation of actions and states, logical reasoning, completeness guarantees, interpretability.</p>
+                            
+                            <h4>2. Search-Based Planning</h4>
+                            <p>Search-based approaches formulate planning as a search problem in a state space, action space, or plan space:</p>
+                            
+                            <ul>
+                                <li><strong>State Space Search:</strong> Searching through possible world states to find paths from the initial state to goal states.</li>
+                                <li><strong>Plan Space Search:</strong> Searching through the space of partial plans, gradually refining them to resolve flaws.</li>
+                                <li><strong>Heuristic Search:</strong> Using domain-specific knowledge to guide search toward promising regions.</li>
+                                <li><strong>Sampling-Based Search:</strong> Exploring the state space through random sampling (e.g., Rapidly-exploring Random Trees).</li>
+                            </ul>
+                            
+                            <p><strong>Key Characteristics:</strong> Flexibility in problem representation, heuristic guidance, anytime behavior, scalability through approximation.</p>
+                            
+                            <h4>3. Decision-Theoretic Planning</h4>
+                            <p>Decision-theoretic approaches model planning problems as sequential decision processes under uncertainty:</p>
+                            
+                            <ul>
+                                <li><strong>Markov Decision Processes (MDPs):</strong> Planning with stochastic action outcomes in fully observable environments.</li>
+                                <li><strong>Partially Observable MDPs (POMDPs):</strong> Planning with both stochastic actions and partial observability.</li>
+                                <li><strong>Stochastic Games:</strong> Planning in multi-agent settings with strategic interactions.</li>
+                                <li><strong>Reinforcement Learning:</strong> Learning optimal policies through interaction with the environment.</li>
+                            </ul>
+                            
+                            <p><strong>Key Characteristics:</strong> Explicit modeling of uncertainty, optimization of expected utility, balance of exploration and exploitation.</p>
+                            
+                            <h4>4. Learning-Based Planning</h4>
+                            <p>Learning-based approaches acquire planning capabilities through experience or training:</p>
+                            
+                            <ul>
+                                <li><strong>Model-Based Reinforcement Learning:</strong> Learning environment models to support planning.</li>
+                                <li><strong>Learning to Plan:</strong> Training neural networks to directly output plans or planning strategies.</li>
+                                <li><strong>Meta-Learning for Planning:</strong> Learning how to adapt planning approaches to new problems.</li>
+                                <li><strong>Imitation Learning:</strong> Learning planning strategies by observing expert demonstrations.</li>
+                            </ul>
+                            
+                            <p><strong>Key Characteristics:</strong> Data-driven adaptation, potential for transfer learning, integration of perception and planning.</p>
+                            
+                            <h4>5. Neuro-Symbolic Planning</h4>
+                            <p>Neuro-symbolic approaches combine neural network capabilities with symbolic reasoning:</p>
+                            
+                            <ul>
+                                <li><strong>Neural-Guided Search:</strong> Using neural networks to guide symbolic search processes.</li>
+                                <li><strong>Differentiable Planning:</strong> Embedding planning operations within differentiable neural architectures.</li>
+                                <li><strong>Latent Space Planning:</strong> Planning in learned latent spaces that capture domain dynamics.</li>
+                                <li><strong>LLM-Based Planning:</strong> Using large language models to generate, evaluate, or refine plans.</li>
+                            </ul>
+                            
+                            <p><strong>Key Characteristics:</strong> Combination of neural flexibility with symbolic interpretability, potential for end-to-end learning.</p>
+                            
+                            <h3>Planning Process Components</h3>
+                            <p>Regardless of the specific paradigm, planning processes in agentic AI systems typically involve several key components:</p>
+                            
+                            <h4>1. Goal Specification</h4>
+                            <p>Defining what the agent aims to achieve:</p>
+                            
+                            <ul>
+                                <li><strong>Goal States:</strong> Specific states of the world that the agent aims to reach.</li>
+                                <li><strong>Objective Functions:</strong> Functions that the agent aims to maximize or minimize.</li>
+                                <li><strong>Temporal Logic Specifications:</strong> Formal specifications of desired behaviors over time.</li>
+                                <li><strong>Natural Language Goals:</strong> Goals specified in natural language that must be interpreted.</li>
+                            </ul>
+                            
+                            <h4>2. State Representation</h4>
+                            <p>Representing the current state of the world and possible future states:</p>
+                            
+                            <ul>
+                                <li><strong>Factored Representations:</strong> States represented as collections of variables or predicates.</li>
+                                <li><strong>Geometric Representations:</strong> States represented in terms of spatial configurations.</li>
+                                <li><strong>Belief States:</strong> Probability distributions over possible states when there is uncertainty.</li>
+                                <li><strong>Learned Representations:</strong> States represented in latent spaces learned from data.</li>
+                            </ul>
+                            
+                            <h4>3. Action Modeling</h4>
+                            <p>Representing the actions available to the agent and their effects:</p>
+                            
+                            <ul>
+                                <li><strong>STRIPS-Style Operators:</strong> Actions with preconditions and effects on state variables.</li>
+                                <li><strong>Durative Actions:</strong> Actions with temporal extent and conditions over time.</li>
+                                <li><strong>Stochastic Actions:</strong> Actions with probabilistic outcomes.</li>
+                              
+(Content truncated due to size limit. Use line ranges to read in chunks)
