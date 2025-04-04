@@ -1,0 +1,461 @@
+/* GenZ-friendly styles for Agentic AI Systems Architect Course */
+
+:root {
+  --primary-color: #00ff8c; /* Neon green */
+  --secondary-color: #6e00ff; /* Electric purple */
+  --accent-color: #ff2a6d; /* Vibrant pink */
+  --dark-bg: #121212; /* Dark mode background */
+  --dark-bg-secondary: #1e1e1e; /* Slightly lighter dark background */
+  --light-text: #ffffff;
+  --light-text-secondary: rgba(255, 255, 255, 0.87);
+  --glow-shadow: 0 0 15px rgba(0, 255, 140, 0.7);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  font-family: 'Inter', 'Roboto', sans-serif;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(18, 18, 18, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--light-text) !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color) !important;
+  text-shadow: var(--glow-shadow);
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+  text-shadow: var(--glow-shadow);
+}
+
+.navbar-toggler {
+  border-color: var(--primary-color);
+}
+
+/* Hero section */
+header.bg-dark {
+  background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-secondary)) !important;
+  border-bottom: 1px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+header.bg-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(110, 0, 255, 0.15), transparent 50%),
+              radial-gradient(circle at 70% 50%, rgba(0, 255, 140, 0.15), transparent 50%);
+  z-index: 0;
+}
+
+header.bg-dark .container {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(0, 255, 140, 0.3);
+}
+
+header .lead {
+  color: var(--light-text-secondary);
+  font-size: 1.2rem;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+  text-shadow: var(--glow-shadow);
+}
+
+/* Module cards */
+.card {
+  background-color: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 255, 140, 0.3);
+  border-color: var(--primary-color);
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+}
+
+.card-header.bg-primary {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
+  color: var(--dark-bg);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: var(--dark-bg);
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.6s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 140, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-bg);
+  box-shadow: 0 0 15px rgba(0, 255, 140, 0.5);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: var(--card-border);
+  position: sticky;
+  top: 2rem;
+}
+
+.sidebar h4 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sidebar .nav-link {
+  color: var(--light-text-secondary);
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  border-left: 2px solid transparent;
+  padding-left: 1rem;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+  color: var(--primary-color);
+  border-left-color: var(--primary-color);
+  background-color: rgba(0, 255, 140, 0.05);
+}
+
+/* Module content */
+.module-content {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  border: var(--card-border);
+}
+
+.module-content h2 {
+  color: var(--primary-color);
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.module-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+.module-content h3 {
+  color: var(--light-text);
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.module-content p {
+  color: var(--light-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.module-content ul, .module-content ol {
+  color: var(--light-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.module-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.module-content a:hover {
+  text-shadow: var(--glow-shadow);
+}
+
+/* Code blocks */
+pre {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+code {
+  color: var(--accent-color);
+  font-family: 'Fira Code', monospace;
+}
+
+/* Alerts */
+.alert {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.alert-primary {
+  background-color: rgba(0, 255, 140, 0.1);
+  border-color: var(--primary-color);
+}
+
+.alert-info {
+  background-color: rgba(110, 0, 255, 0.1);
+  border-color: var(--secondary-color);
+}
+
+/* Tables */
+.table {
+  color: var(--light-text-secondary);
+}
+
+.table-bordered {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-light, .table thead th {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--light-text);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-bg-secondary) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--light-text-secondary);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  text-shadow: var(--glow-shadow);
+}
+
+/* Animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 255, 140, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 140, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 140, 0.5);
+  }
+}
+
+.glow-effect {
+  animation: glow 3s infinite;
+}
+
+/* Micro-interactions */
+.nav-link, .btn, .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Emoji usage */
+.emoji-icon {
+  font-size: 1.2em;
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    margin-bottom: 2rem;
+  }
+  
+  .module-content {
+    padding: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* AIVibes branding elements */
+.aivibes-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.aivibes-link:hover {
+  text-shadow: var(--glow-shadow);
+}
+
+.aivibes-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: var(--dark-bg);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.aivibes-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glow-shadow);
+}
+
+.aivibes-footer {
+  background: linear-gradient(90deg, rgba(0, 255, 140, 0.1), rgba(110, 0, 255, 0.1));
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: var(--glow-shadow);
+}
+
+.dark-mode-toggle i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}

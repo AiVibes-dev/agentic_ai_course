@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 2: Architectural Components of Agentic AI Systems</title>
+    <title>Module 2: Components | Agentic AI Systems Architect Course | learn.aivibes.cloud</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../genz-styles.css">
+    <meta name="description" content="Learn about the architectural components of agentic AI systems including perception, cognition, action, and memory modules. Part of AIVibes learning ecosystem.">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">Agentic AI Systems Architect</a>
+            <a class="navbar-brand" href="../index.html">
+                <span class="emoji-icon">🤖</span> Agentic AI Systems Architect
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,6 +36,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../resources.html">Resources</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link aivibes-link" href="https://aivibes.cloud" target="_blank">
+                            AIVibes <span class="aivibes-badge">Main Site</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -36,15 +48,22 @@
 
     <header class="bg-dark text-white py-4">
         <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="../index.html" class="text-white">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../modules.html" class="text-white">Modules</a></li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">Module 2: Architectural Components</li>
-                </ol>
-            </nav>
-            <h1 class="mt-3">Module 2: Architectural Components of Agentic AI Systems</h1>
-            <p class="lead">Understanding the building blocks that form effective agentic systems</p>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-2">
+                            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../modules.html">Modules</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Module 2</li>
+                        </ol>
+                    </nav>
+                    <h1 class="mb-2">Module 2: Architectural Components of Agentic AI Systems</h1>
+                    <p class="lead">Understanding the building blocks that form sophisticated agentic systems</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <span class="badge bg-primary p-2 fs-6">Estimated time: 5 hours</span>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -53,27 +72,45 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="sidebar">
-                        <h4>Module Contents</h4>
+                        <h4><span class="emoji-icon">📋</span> Module Contents</h4>
                         <nav class="nav flex-column">
-                            <a class="nav-link" href="#overview">2.1 Component Overview</a>
-                            <a class="nav-link" href="#perception">2.2 Perception Systems</a>
-                            <a class="nav-link" href="#cognition">2.3 Cognitive Architectures</a>
-                            <a class="nav-link" href="#action">2.4 Action Frameworks</a>
-                            <a class="nav-link" href="#memory">2.5 Memory Systems</a>
-                            <a class="nav-link" href="#integration">2.6 Component Integration</a>
-                            <a class="nav-link" href="#assessment">2.7 Module Assessment</a>
+                            <a class="nav-link" href="#introduction">Introduction</a>
+                            <a class="nav-link" href="#perception">Perception Module</a>
+                            <a class="nav-link" href="#cognition">Cognition Module</a>
+                            <a class="nav-link" href="#action">Action Module</a>
+                            <a class="nav-link" href="#memory">Memory Module</a>
+                            <a class="nav-link" href="#integration">Component Integration</a>
+                            <a class="nav-link" href="#architectures">Reference Architectures</a>
+                            <a class="nav-link" href="#exercises">Practical Exercises</a>
+                            <a class="nav-link" href="#assessment">Assessment</a>
                         </nav>
-                        
-                        <h4 class="mt-4">Module Resources</h4>
-                        <div class="d-grid gap-2">
-                            <a href="../resources.html#module2" class="btn btn-outline-primary btn-sm">Learning Resources</a>
-                            <a href="../exercises.html#module2" class="btn btn-outline-primary btn-sm">Practical Exercises</a>
+                        <div class="mt-4">
+                            <a href="module1.html" class="btn btn-outline-primary w-100 mb-2">
+                                <i class="bi bi-arrow-left"></i> Previous: Module 1
+                            </a>
+                            <a href="module3.html" class="btn btn-outline-primary w-100">
+                                Next: Module 3 <i class="bi bi-arrow-right"></i>
+                            </a>
                         </div>
-                        
-                        <h4 class="mt-4">Module Navigation</h4>
-                        <div class="d-flex justify-content-between">
-                            <a href="module1.html" class="btn btn-primary btn-sm">← Previous</a>
-                            <a href="module3.html" class="btn btn-primary btn-sm">Next →</a>
+                        <div class="mt-4 p-3 border rounded">
+                            <h5><span class="emoji-icon">💡</span> Related Resources</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2">
+                                    <a href="https://aivibes.cloud/blog/agent-architecture-components" target="_blank" class="aivibes-link">
+                                        <i class="bi bi-journal-text"></i> AIVibes: Agent Components Guide
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://aivibes.cloud/resources/perception-systems" target="_blank" class="aivibes-link">
+                                        <i class="bi bi-eye"></i> Perception Systems Deep Dive
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://aivibes.cloud/webinars/agent-memory-systems" target="_blank" class="aivibes-link">
+                                        <i class="bi bi-camera-video"></i> Webinar: Agent Memory Systems
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -81,141 +118,109 @@
                 <div class="col-lg-9">
                     <div class="module-content">
                         <div class="alert alert-primary" role="alert">
-                            <h4 class="alert-heading">Learning Objectives</h4>
-                            <p>By the end of this module, you will be able to:</p>
-                            <ul class="mb-0">
-                                <li>Design perception systems for different input types</li>
-                                <li>Implement cognitive processing modules</li>
-                                <li>Develop action selection mechanisms</li>
-                                <li>Create effective memory systems</li>
-                                <li>Integrate components into cohesive architectures</li>
-                            </ul>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-info-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="alert-heading mb-1">Learning Objectives</h4>
+                                    <p class="mb-0">By the end of this module, you will be able to:</p>
+                                    <ul class="mb-0 mt-2">
+                                        <li>Identify and describe the core architectural components of agentic AI systems</li>
+                                        <li>Understand the function and implementation of perception modules</li>
+                                        <li>Design effective cognition modules for reasoning and decision-making</li>
+                                        <li>Implement action modules for executing agent decisions</li>
+                                        <li>Develop memory systems for knowledge retention and retrieval</li>
+                                        <li>Integrate components into cohesive agent architectures</li>
+                                        <li>Evaluate different architectural patterns for specific use cases</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <section id="overview">
-                            <h2>2.1 Component Overview</h2>
+
+                        <section id="introduction">
+                            <h2><span class="emoji-icon">🌟</span> Introduction</h2>
+                            <p>Welcome to Module 2 of the Agentic AI Systems Architect course. In this module, we'll explore the core architectural components that form the building blocks of sophisticated agentic systems.</p>
+                            <p>Agentic AI systems can be conceptualized as modular architectures composed of several key components working together. Understanding these components and how they interact is essential for designing effective agent systems that can perceive their environment, reason about it, make decisions, take actions, and learn from experience.</p>
+                            <p>We'll examine each major component in detail, exploring their functions, implementation approaches, and integration challenges. By the end of this module, you'll have a comprehensive understanding of the architectural building blocks needed to design and implement agentic AI systems for various applications.</p>
                             
-                            <h3>The Modular Nature of Agentic Systems</h3>
-                            <p>Agentic AI systems can be conceptualized as collections of specialized components that work together to enable goal-directed behavior. This modular approach to agent architecture offers several advantages:</p>
+                            <div class="card mb-4 mt-4">
+                                <div class="card-body">
+                                    <h5 class="card-title"><span class="emoji-icon">🔍</span> Key Question</h5>
+                                    <p class="card-text">How do the different architectural components of an agentic AI system work together to create a cohesive and effective agent?</p>
+                                    <p class="card-text">Keep this question in mind as we explore the various components and their integration in this module.</p>
+                                </div>
+                            </div>
+                            
+                            <h3>Component Overview</h3>
+                            <p>Before diving into each component in detail, let's establish a high-level overview of the core architectural components that make up an agentic AI system:</p>
+                            
+                            <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="bi bi-eye text-primary"></i> Perception Module</h5>
+                                            <p class="card-text">Responsible for sensing and interpreting the environment, converting raw inputs into structured representations that the agent can reason about.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="bi bi-lightbulb text-primary"></i> Cognition Module</h5>
+                                            <p class="card-text">Handles reasoning, planning, and decision-making processes, determining what actions the agent should take based on its goals and current understanding.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="bi bi-gear text-primary"></i> Action Module</h5>
+                                            <p class="card-text">Executes decisions by translating them into concrete operations that affect the environment or produce outputs for users.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="bi bi-database text-primary"></i> Memory Module</h5>
+                                            <p class="card-text">Stores and retrieves information, maintaining the agent's knowledge base and context across interactions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p>These components interact in a continuous cycle: the perception module senses the environment, the cognition module reasons about the perceived information and makes decisions, the action module executes those decisions, and the memory module stores relevant information throughout the process.</p>
+                            
+                            <p>Let's now explore each of these components in detail, examining their functions, implementation approaches, and design considerations.</p>
+                            
+                            <div class="alert alert-info mt-4">
+                                <i class="bi bi-link-45deg"></i> For a visual overview of agent architecture components, check out <a href="https://aivibes.cloud/diagrams/agent-architecture" target="_blank" class="aivibes-link">AIVibes Interactive Agent Architecture Diagram</a>.
+                            </div>
+                        </section>
+
+                        <section id="perception">
+                            <h2><span class="emoji-icon">👁️</span> Perception Module</h2>
+                            <p>The perception module serves as the agent's sensory system, responsible for gathering and interpreting information from the environment. It transforms raw inputs into structured representations that the agent can reason about.</p>
+                            
+                            <h3>Functions and Responsibilities</h3>
+                            <p>The perception module performs several critical functions:</p>
                             
                             <ul>
-                                <li><strong>Separation of Concerns:</strong> Each component can focus on a specific aspect of agent functionality, making the system easier to design, implement, and maintain.</li>
-                                <li><strong>Reusability:</strong> Well-designed components can be reused across different agent implementations or adapted for new contexts.</li>
-                                <li><strong>Scalability:</strong> Components can be improved or replaced independently as technology advances, without requiring a complete system redesign.</li>
-                                <li><strong>Testability:</strong> Individual components can be tested in isolation, making it easier to identify and address issues.</li>
-                                <li><strong>Flexibility:</strong> Different components can be combined in various ways to create agents with diverse capabilities and behaviors.</li>
+                                <li><strong>Input Processing:</strong> Handling various types of inputs (text, images, audio, sensor data, etc.)</li>
+                                <li><strong>Feature Extraction:</strong> Identifying relevant features and patterns in the input data</li>
+                                <li><strong>Semantic Understanding:</strong> Interpreting the meaning and context of the inputs</li>
+                                <li><strong>Attention Mechanisms:</strong> Focusing on the most relevant aspects of the input</li>
+                                <li><strong>Multimodal Integration:</strong> Combining information from different input modalities</li>
+                                <li><strong>Noise Filtering:</strong> Distinguishing signal from noise in the input data</li>
                             </ul>
                             
-                            <h3>Core Architectural Components</h3>
-                            <p>While agentic AI systems can vary widely in their specific implementations, most include four core types of components:</p>
+                            <h3>Implementation Approaches</h3>
+                            <p>Several approaches and technologies can be used to implement perception modules:</p>
                             
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <thead class="table-light">
                                         <tr>
-                                            <th>Component Type</th>
-                                            <th>Primary Function</th>
-                                            <th>Key Responsibilities</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>Perception Systems</strong></td>
-                                            <td>Process and interpret inputs from the environment</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Input processing and normalization</li>
-                                                    <li>Feature extraction and representation</li>
-                                                    <li>Context recognition and interpretation</li>
-                                                    <li>Multimodal integration</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Cognitive Architectures</strong></td>
-                                            <td>Enable reasoning, planning, and decision-making</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Goal management and prioritization</li>
-                                                    <li>Planning and problem-solving</li>
-                                                    <li>Reasoning and inference</li>
-                                                    <li>Learning and adaptation</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Action Frameworks</strong></td>
-                                            <td>Execute operations that affect the environment</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Action selection and prioritization</li>
-                                                    <li>Tool and API integration</li>
-                                                    <li>Output generation and formatting</li>
-                                                    <li>Execution monitoring and error handling</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Memory Systems</strong></td>
-                                            <td>Store and retrieve information across time</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Working memory management</li>
-                                                    <li>Long-term knowledge storage</li>
-                                                    <li>Episodic memory recording</li>
-                                                    <li>Memory retrieval and relevance assessment</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <h3>Component Interactions</h3>
-                            <p>The effectiveness of an agentic system depends not only on the capabilities of its individual components but also on how these components interact. Key interaction patterns include:</p>
-                            
-                            <ol>
-                                <li><strong>Sequential Processing:</strong> Information flows from perception to cognition to action in a linear sequence.</li>
-                                <li><strong>Feedback Loops:</strong> Results of actions are perceived and fed back into cognitive processes.</li>
-                                <li><strong>Parallel Processing:</strong> Multiple components operate simultaneously on different aspects of a task.</li>
-                                <li><strong>Hierarchical Organization:</strong> Higher-level components coordinate and direct the operation of lower-level components.</li>
-                                <li><strong>Memory-Mediated Interaction:</strong> Components interact indirectly by reading from and writing to shared memory structures.</li>
-                            </ol>
-                            
-                            <p>In the following sections, we will explore each of the core component types in detail, examining their internal architectures, implementation approaches, and roles within the overall agent system.</p>
-                        </section>
-                        
-                        <section id="perception">
-                            <h2>2.2 Perception Systems</h2>
-                            
-                            <h3>The Role of Perception in Agentic Systems</h3>
-                            <p>Perception systems serve as the interface between an agent and its environment, enabling the agent to sense, process, and interpret inputs. Effective perception is fundamental to agent functionality, as it determines what information is available for reasoning and decision-making.</p>
-                            
-                            <p>Key functions of perception systems include:</p>
-                            
-                            <ul>
-                                <li><strong>Input Processing:</strong> Handling raw inputs from various sources and converting them into formats suitable for further processing.</li>
-                                <li><strong>Feature Extraction:</strong> Identifying relevant patterns, entities, and relationships within inputs.</li>
-                                <li><strong>Contextual Interpretation:</strong> Understanding inputs within their broader context, including conversation history, user preferences, and domain knowledge.</li>
-                                <li><strong>Attention Management:</strong> Focusing processing resources on the most relevant aspects of inputs.</li>
-                                <li><strong>Uncertainty Handling:</strong> Managing ambiguity and incomplete information in inputs.</li>
-                            </ul>
-                            
-                            <h3>Types of Perception Systems</h3>
-                            <p>Perception systems can be categorized based on the types of inputs they process:</p>
-                            
-                            <h4>1. Natural Language Perception</h4>
-                            <p>Natural language perception systems process text or speech inputs, enabling agents to understand human language. These systems typically include:</p>
-                            
-                            <ul>
-                                <li><strong>Tokenization:</strong> Breaking text into meaningful units (words, subwords, or characters).</li>
-                                <li><strong>Syntactic Analysis:</strong> Parsing sentence structure to understand grammatical relationships.</li>
-                                <li><strong>Semantic Processing:</strong> Extracting meaning from text, including entity recognition, relation extraction, and intent classification.</li>
-                                <li><strong>Pragmatic Understanding:</strong> Interpreting language in context, including handling of idioms, sarcasm, and implicit information.</li>
-                                <li><strong>Discourse Analysis:</strong> Tracking conversation flow and maintaining coherence across multiple exchanges.</li>
-                            </ul>
-                            
-                            <p>In modern LLM-based agents, much of this functionality is handled by the underlying language model, which can process and interpret natural language inputs with high accuracy. However, specialized components may still be needed for specific tasks like structured information extraction or domain-specific language understanding.</p>
-                            
-                            <h4>2. Structured
+      
 (Content truncated due to size limit. Use line ranges to read in chunks)

@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercises - Agentic AI Systems Architect Course</title>
+    <title>Exercises | Agentic AI Systems Architect Course | learn.aivibes.cloud</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="genz-styles.css">
+    <meta name="description" content="Hands-on practical exercises for the Agentic AI Systems Architect course. Build real-world agent components and systems. Powered by AIVibes.cloud.">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Agentic AI Systems Architect</a>
+            <a class="navbar-brand" href="index.html">
+                <span class="emoji-icon">🤖</span> Agentic AI Systems Architect
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,6 +36,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link aivibes-link" href="https://aivibes.cloud" target="_blank">
+                            AIVibes <span class="aivibes-badge">Main Site</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -36,184 +48,212 @@
 
     <header class="bg-dark text-white py-4">
         <div class="container">
-            <h1>Practical Exercises and Projects</h1>
-            <p class="lead">Hands-on activities to reinforce theoretical concepts and build real-world skills</p>
+            <h1 class="mb-2">Practical Exercises</h1>
+            <p class="lead">Hands-on activities to reinforce your learning and build real agent components</p>
         </div>
     </header>
 
     <section class="py-5">
         <div class="container">
-            <div class="row mb-4">
+            <div class="row mb-5">
                 <div class="col-lg-8">
-                    <h2>Learning Through Practice</h2>
-                    <p>This course emphasizes hands-on learning through practical exercises and projects. Each module includes guided exercises to reinforce theoretical concepts, as well as more substantial implementation projects to build real components of agentic AI systems.</p>
-                    <p>The exercises progress in complexity throughout the course, culminating in a comprehensive capstone project where you'll design and implement a complete agentic AI system for a real-world application.</p>
+                    <h2 class="mb-4"><span class="emoji-icon">🧪</span> Learning by Doing</h2>
+                    <p>Practical application is at the heart of this course. Each module includes hands-on exercises designed to reinforce theoretical concepts and develop your skills in building agentic AI systems.</p>
+                    <p>These exercises range from guided tutorials to open-ended projects, gradually increasing in complexity as you progress through the course. By completing these exercises, you'll build a portfolio of agent components and eventually a complete agentic AI system.</p>
+                    <p>All exercises include starter code, clear instructions, and evaluation criteria to help you assess your progress. Many exercises also offer extension challenges for those looking to deepen their understanding.</p>
+                    <p class="mb-4">
+                        <a href="https://aivibes.cloud/blog/hands-on-learning" target="_blank" class="aivibes-link">
+                            <i class="bi bi-journal-code"></i> Read more about AIVibes' approach to hands-on learning
+                        </a>
+                    </p>
                 </div>
-            </div>
-
-            <!-- Module 1 Exercises -->
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 1: Foundations of Agentic AI Systems</h3>
-                </div>
-                <div class="card-body">
-                    <div class="row mb-4">
-                        <div class="col-md-6">
-                            <h4>Exercise 1.1: Agent Capability Analysis</h4>
-                            <p><strong>Objective:</strong> Analyze existing AI agents to identify their capabilities and limitations.</p>
-                            <p><strong>Description:</strong> Select three different commercial AI agents and interact with each through a series of structured tasks to document their capabilities and limitations.</p>
-                            <a href="exercises/exercise1-1.html" class="btn btn-outline-primary btn-sm">View Exercise</a>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-primary">
+                            <h3 class="mb-0"><span class="emoji-icon">💡</span> Exercise Types</h3>
                         </div>
-                        <div class="col-md-6">
-                            <h4>Exercise 1.2: Ethical Boundary Exploration</h4>
-                            <p><strong>Objective:</strong> Investigate how different AI agents handle ethical dilemmas and boundary cases.</p>
-                            <p><strong>Description:</strong> Design a set of prompts that explore ethical boundaries and test these prompts across multiple AI agents to analyze their approaches to ethical guardrails.</p>
-                            <a href="exercises/exercise1-2.html" class="btn btn-outline-primary btn-sm">View Exercise</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h4>Project 1: Agent Capability Prototype</h4>
-                            <p><strong>Objective:</strong> Build a simple prototype demonstrating one core capability of agentic AI.</p>
-                            <p><strong>Description:</strong> Select one core capability (basic planning, short-term memory, simple tool use, or reflection/self-improvement) and implement a minimal prototype demonstrating this capability.</p>
-                            <a href="exercises/project1.html" class="btn btn-primary btn-sm">View Project</a>
+                        <div class="card-body">
+                            <ul class="mb-0">
+                                <li><strong>Guided Exercises:</strong> Step-by-step tutorials with detailed instructions</li>
+                                <li><strong>Implementation Tasks:</strong> Building specific agent components</li>
+                                <li><strong>Analysis Activities:</strong> Evaluating existing agent architectures</li>
+                                <li><strong>Design Challenges:</strong> Creating architectural solutions</li>
+                                <li><strong>Integration Projects:</strong> Combining components into systems</li>
+                                <li><strong>Capstone Project:</strong> Building a complete agentic AI system</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Module 2 Exercises -->
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 2: Architectural Components of Agentic AI Systems</h3>
-                </div>
-                <div class="card-body">
-                    <div class="row mb-4">
-                        <div class="col-md-6">
-                            <h4>Exercise 2.1: Component Design Workshop</h4>
-                            <p><strong>Objective:</strong> Design the architecture for each major component of an agentic AI system.</p>
-                            <p><strong>Description:</strong> For each core component (perception, cognition, action, memory), define responsibilities, specify inputs/outputs, identify subcomponents, and design interfaces.</p>
-                            <a href="exercises/exercise2-1.html" class="btn btn-outline-primary btn-sm">View Exercise</a>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Exercise 2.2: Memory System Implementation</h4>
-                            <p><strong>Objective:</strong> Implement a basic memory system for an agentic AI.</p>
-                            <p><strong>Description:</strong> Design and implement a memory system with at least two types of memory (short-term/working memory and long-term/episodic memory).</p>
-                            <a href="exercises/exercise2-2.html" class="btn btn-outline-primary btn-sm">View Exercise</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h4>Project 2: End-to-End Component Integration</h4>
-                            <p><strong>Objective:</strong> Build a simple end-to-end agent by integrating basic versions of all core components.</p>
-                            <p><strong>Description:</strong> Implement simplified versions of perception, cognitive, action, and memory modules, and create a simple agent loop that processes inputs through all components.</p>
-                            <a href="exercises/project2.html" class="btn btn-primary btn-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- For brevity, showing just the first two modules in detail -->
-            <!-- Additional modules would follow the same pattern -->
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 3: Data Structures and Knowledge Representation</h3>
-                </div>
-                <div class="card-body">
-                    <p>Exercises focus on implementing knowledge graphs, experimenting with vector embeddings, and developing multi-modal knowledge systems.</p>
-                    <a href="exercises/module3.html" class="btn btn-primary btn-sm">View Module 3 Exercises</a>
-                </div>
-            </div>
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 4: Planning and Decision-Making Algorithms</h3>
-                </div>
-                <div class="card-body">
-                    <p>Exercises focus on implementing symbolic planning systems, applying reinforcement learning for agent decisions, and developing hierarchical planning systems.</p>
-                    <a href="exercises/module4.html" class="btn btn-primary btn-sm">View Module 4 Exercises</a>
-                </div>
-            </div>
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 5: Agent Development Frameworks and Tools</h3>
-                </div>
-                <div class="card-body">
-                    <p>Exercises focus on comparing agent development frameworks, experimenting with prompt engineering techniques, and extending existing frameworks with custom functionality.</p>
-                    <a href="exercises/module5.html" class="btn btn-primary btn-sm">View Module 5 Exercises</a>
-                </div>
-            </div>
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 6: Multi-Agent Systems Design</h3>
-                </div>
-                <div class="card-body">
-                    <p>Exercises focus on designing communication protocols, exploring role specialization, and building collaborative problem-solving systems with multiple agents.</p>
-                    <a href="exercises/module6.html" class="btn btn-primary btn-sm">View Module 6 Exercises</a>
-                </div>
-            </div>
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 7: Cloud Infrastructure for Agentic AI</h3>
-                </div>
-                <div class="card-body">
-                    <p>Exercises focus on containerizing agent systems, evaluating database solutions, and designing scalable cloud architectures for agent deployment.</p>
-                    <a href="exercises/module7.html" class="btn btn-primary btn-sm">View Module 7 Exercises</a>
-                </div>
-            </div>
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 8: Security, Governance, and Responsible AI</h3>
-                </div>
-                <div class="card-body">
-                    <p>Exercises focus on implementing agent sandboxing, developing ethical assessment frameworks, and designing secure and responsible agent systems.</p>
-                    <a href="exercises/module8.html" class="btn btn-primary btn-sm">View Module 8 Exercises</a>
-                </div>
-            </div>
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 9: Performance Optimization and Scaling</h3>
-                </div>
-                <div class="card-body">
-                    <p>Exercises focus on profiling and bottleneck analysis, implementing caching strategies, and designing highly scalable agent architectures.</p>
-                    <a href="exercises/module9.html" class="btn btn-primary btn-sm">View Module 9 Exercises</a>
-                </div>
-            </div>
-
-            <div class="exercise-card card mb-4">
-                <div class="card-header">
-                    <h3 class="mb-0">Module 10: Capstone Project</h3>
-                </div>
-                <div class="card-body">
-                    <h4>Capstone Project: End-to-End Agentic AI System</h4>
-                    <p><strong>Objective:</strong> Design, implement, and deploy a complete agentic AI system that solves a real-world problem.</p>
-                    <p><strong>Description:</strong> This comprehensive project guides you through problem definition, architecture design, implementation, evaluation, and presentation of an end-to-end agentic AI system.</p>
-                    <a href="exercises/capstone.html" class="btn btn-primary">View Capstone Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-light py-4">
-        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 Agentic AI Systems Architect Course</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-decoration-none me-3">Terms of Use</a>
-                    <a href="#" class="text-decoration-none">Privacy Policy</a>
+                <div class="col-12">
+                    <h2 class="mb-4 text-center"><span class="emoji-icon">🔬</span> Module Exercises</h2>
                 </div>
             </div>
-        </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+            <div class="row g-4">
+                <!-- Module 1 Exercises -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="mb-0">Module 1: Foundations</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">🔍</span> Exercise 1.1: Agent Analysis</h4>
+                                <p>Analyze and compare different types of AI agents in real-world applications.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Analysis</span>
+                                    <span class="text-muted">Difficulty: ★★☆☆☆</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">🧩</span> Exercise 1.2: Agent Capabilities Mapping</h4>
+                                <p>Map out the capabilities and limitations of different agent architectures.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Design</span>
+                                    <span class="text-muted">Difficulty: ★★★☆☆</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4><span class="emoji-icon">📝</span> Exercise 1.3: Ethical Framework</h4>
+                                <p>Develop an ethical framework for agentic AI system development.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Analysis</span>
+                                    <span class="text-muted">Difficulty: ★★★☆☆</span>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="modules/module1.html#exercises" class="btn btn-outline-primary">
+                                    <span class="emoji-icon">📖</span> View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 2 Exercises -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="mb-0">Module 2: Architectural Components</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">👁️</span> Exercise 2.1: Perception Module</h4>
+                                <p>Implement a basic perception module for processing textual input.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Implementation</span>
+                                    <span class="text-muted">Difficulty: ★★★☆☆</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">🧠</span> Exercise 2.2: Cognition Component</h4>
+                                <p>Build a simple reasoning component using rule-based logic.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Implementation</span>
+                                    <span class="text-muted">Difficulty: ★★★★☆</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4><span class="emoji-icon">🔄</span> Exercise 2.3: Component Integration</h4>
+                                <p>Integrate perception and cognition components into a simple agent.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Integration</span>
+                                    <span class="text-muted">Difficulty: ★★★★☆</span>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="modules/module2.html#exercises" class="btn btn-outline-primary">
+                                    <span class="emoji-icon">📖</span> View Details
+                                </a>
+                            </div>
+                            <p class="mt-3 small">
+                                <a href="https://aivibes.cloud/blog/component-architecture" target="_blank" class="aivibes-link">
+                                    <i class="bi bi-link-45deg"></i> Related: Component Architecture Best Practices
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 3 Exercises -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="mb-0">Module 3: Data Structures</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">🕸️</span> Exercise 3.1: Knowledge Graph</h4>
+                                <p>Create a knowledge graph for a domain-specific agent.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Implementation</span>
+                                    <span class="text-muted">Difficulty: ★★★★☆</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">📊</span> Exercise 3.2: Vector Embeddings</h4>
+                                <p>Implement vector embeddings for semantic similarity search.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Implementation</span>
+                                    <span class="text-muted">Difficulty: ★★★★☆</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4><span class="emoji-icon">🧮</span> Exercise 3.3: MDP Modeling</h4>
+                                <p>Model a simple decision problem as a Markov Decision Process.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Design</span>
+                                    <span class="text-muted">Difficulty: ★★★★★</span>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="modules/module3.html#exercises" class="btn btn-outline-primary">
+                                    <span class="emoji-icon">📖</span> View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Module Exercises -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="mb-0">Module 4: Planning Algorithms</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">🗺️</span> Exercise 4.1: Symbolic Planner</h4>
+                                <p>Implement a basic symbolic planning system for an agent.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Implementation</span>
+                                    <span class="text-muted">Difficulty: ★★★★☆</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h4><span class="emoji-icon">🎮</span> Exercise 4.2: Reinforcement Learning</h4>
+                                <p>Train a simple RL agent to solve a decision-making problem.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Implementation</span>
+                                    <span class="text-muted">Difficulty: ★★★★★</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4><span class="emoji-icon">🔀</span> Exercise 4.3: Hybrid Planning</h4>
+                                <p>Design a hybrid planning approach combining symbolic and learning-based methods.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Design</span>
+                                    <span class="text-muted">Difficulty: ★★★★★</span>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="modules/module4.html#exercises" class="btn btn-outline-primary">
+                                    <span class="emoji-icon">📖</span> View Details
+                                </a>
+                            </div>
+                            <p class="mt-3 small">
+                                <a
+(Content truncated due to size limit. Use line ranges to read in chunks)
